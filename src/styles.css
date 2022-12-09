@@ -1,0 +1,699 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+@font-face {
+    font-family: "Constan";
+    src: local("Constan"), url(./assets/fonts/constan.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Calibri";
+    src: local("Calibri"), url(./assets/fonts/calibril.ttf) format("truetype");
+}
+
+:root {
+    --main-color-blanc: #F2F2F2;
+
+    --main-color-blue: #ADB9CA;
+    --main-color-grey: #969B9F;
+    --main-color-blue2: #919EB1;
+    --main-color-red: #9E3134;
+    --main-color-orange: #BE8C6B;
+    --main-police-title: 'Constan';
+    --main-police-text: 'Calibri';
+
+    --main-title-font-size-XL: 35px;
+    --main-title-font-size-M: 25px;
+    --main-title-font-size-S: 20px;
+
+    --main-text-font-size-XL: 20px;
+    --main-text-font-size-M: 18px;
+    --main-text-font-size-S: 15px;
+
+    --main-button-font-size-XL: 25px;
+    --main-button-font-size-M: 20px;
+    --main-button-font-size-S: 15px;
+
+    --form-input-contact-font-size: ''
+}
+
+
+body{
+    background-color: var( --main-color-blanc);
+}
+
+/*
+FOOTER
+*/
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 701px) {
+    .text-footer {
+        font-size: 20px;
+    }
+
+    .footer-titres {
+        font-size: var(--main-title-font-size-XL);
+    }
+
+    .bouton-footer {
+        font-size: var(--main-button-font-size-XL);
+
+    }
+
+
+}
+
+@media screen and (max-width: 700px) {
+    .text-footer {
+        font-size: 10px;
+    }
+
+    .footer-titres {
+        font-size: 15px !important;
+    }
+
+    .bouton-footer{
+        font-size: 12px;
+
+    }
+
+
+}
+
+
+
+.bouton-footer {
+    color: white;
+    font-family: var(--main-police-title);
+
+    background-color: var(--main-color-red);
+}
+
+.text-footer {
+    font-family: var(--main-police-text);
+    color: black;
+}
+
+.footer-titres {
+    margin-bottom: 0px !important;
+    font-family: var(--main-police-title);
+    color: var(--main-color-red);
+}
+
+
+
+/*
+NAV BAR
+
+*/
+.nav-style {
+    position: fixed;
+    z-index: 99;
+    background-color: var(--main-color-blue) !important;
+}
+
+
+
+
+.nav-bar-menu-text {
+    font-family: var(--main-police-title);
+    font-size: 20px !important;
+    color: var(--main-color-red) !important;
+}
+
+a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.title_underline {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #000000;
+    font-size: 1.1em;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: black;
+}
+
+.navbar-logo-centered .navbar-nav .nav-link {
+    padding: .5em 1em;
+}
+
+
+
+
+/**
+
+Accueil
+**/
+
+.parallax-accueil-div{
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+}
+
+.row-logos {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    width: 100%;padding: 0%;margin:0%;
+}
+
+.accueil-faisons {
+    background-color: var(--main-color-blue);
+    padding-bottom: 40px !important;
+
+}
+
+.accueil-div-separator {
+    height: 400px !important;
+    background-color: white !important;
+}
+
+.accueil-hr {
+    width: 10%;
+    height: 2px !important;
+    margin-bottom: 20px !important;
+    border: none;
+    margin: auto;
+    opacity: 1 !important;
+    background-color: var(--main-color-red);
+    color: var(--main-color-red);
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+    .accueil-paralax-titre {
+        font-size: 70px;
+    }
+
+    .accueil-paralax-sous-titre {
+        font-size: 50px;
+    }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+    .accueil-paralax-titre {
+        font-size: 40px;
+    }
+
+    .accueil-paralax-sous-titre {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .card-accueil-activite {
+        width: 400px;
+    }
+}
+
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+    .card-accueil-activite {
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 1051px) {
+
+
+    .img-a-propros-master {
+        width: auto;
+        height: 150px;
+    }
+
+    .img-a-propros-leec {
+        width: auto;
+        height: 200px;
+    }
+
+    .img-a-propros-couveuse {
+        width: auto;
+        height: 100px;
+    }
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  #content-wrap {
+    padding-bottom: 2.5rem;   
+  }
+  
+  #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;           
+  }
+
+
+@media screen and (max-width: 1050px) {
+   
+
+    .img-a-propros-master {
+        width: auto;
+        height: 100px;
+    }
+
+    .img-a-propros-leec {
+        width: auto;
+        height: 150px;
+    }
+
+    .img-a-propros-couveuse {
+        width: auto;
+        height: 50px;
+    }
+}
+
+@media screen and (min-width: 1510px) {
+    .accueil-titres-accompagne {
+        font-size: var(--main-title-font-size-XL);
+
+    }
+}
+@media screen and (min-width: 1095px) and (max-width: 1509px) {
+    .accueil-titres-accompagne{
+        font-size: var(--main-title-font-size-M);
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 1094px) {
+    .accueil-titres-accompagne{
+        font-size: var(--main-title-font-size-S);
+    }
+}
+@media screen and (max-width: 575px) {
+    .accueil-titres-accompagne{
+        font-size: var(--main-title-font-size-XL);
+    }
+}
+
+
+.accueil-titres-accompagne{
+   
+    padding-top: 40px;
+    margin-bottom: 0px !important;
+    font-family: var(--main-police-title);
+    color: var(--main-color-red);
+}
+
+
+.card-accueil-activite {
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px;
+}
+
+
+.accueil-paralax-titre {
+    font-family: var(--main-police-title);
+    color: var(--main-color-red);
+}
+
+.accueil-paralax-sous-titre {
+    font-family: var(--main-police-title);
+    color: var(--main-color-red);
+}
+
+.accueil-titres {
+    padding-top: 40px;
+    margin-bottom: 0px !important;
+    font-family: var(--main-police-title);
+    color: var(--main-color-red);
+    font-size: var(--main-title-font-size-XL);
+}
+
+.accueil-textes {
+    display: table;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    width: 70%;
+    font-family: var(--main-police-text);
+    font-size: var(--main-text-font-size-XL);
+}
+
+.bouton-accueil {
+    font-size: var(--main-button-font-size-XL);
+    color: white;
+    font-family: var(--main-police-title);
+    padding: 5px 20px 5px 20px;
+
+    background-color: var(--main-color-red);
+}
+
+.parallax {
+    /* The image used */
+
+    /* Set a specific height */
+    min-height: 800px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+.secteur-activite-card{
+    width: 100%;padding: 0%;margin:0%;
+}
+
+
+
+#toast-container>div {
+    opacity: 1;
+}
+
+.parralax-text{
+    padding-top: 200px;  position: relative;height: 100%;
+}
+.parralax-text a {
+  position: absolute;
+  bottom: 20px;
+  z-index: 2;
+    
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: var(--main-color-red);;
+  font-family: var(--main-police-text);
+  font-size: 30px;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+.parralax-text a:hover {
+  opacity: .5;
+}
+
+#section04{
+    position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+#section04 a {
+  padding-top: 30px;
+}
+#section04 a span {
+  position: absolute;
+  top: 0px;
+  color:var(--main-color-red);;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 5px solid var(--main-color-red);
+  border-bottom: 5px solid var(--main-color-red);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb04 2s infinite;
+  animation: sdb04 2s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb04 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+  }
+  40% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+}
+@keyframes sdb04 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+  }
+  40% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+}
+
+
+/**CONTACT BIS**/
+
+
+.contact-fond{
+    /* The image used */
+    background-image: url("./assets/parallax/parallax1.jpg");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-bis-box::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1;
+    /* Firefox */
+    font-family: var(--main-police-title);
+
+}
+
+.contact-bis-box:focus {
+    background-color: #9E3134;
+    font-family: var(--main-police-text);
+    color: white;
+}
+
+.contact-bis-box{
+    background-color: #9E3134;
+    font-family: var(--main-police-text);
+    color: white;
+}
+
+@media screen and (min-width: 710px) {
+    .contact-bis-box::placeholder {
+        font-size: 30px;
+    }
+    .contact-bis-box {
+        font-size: 30px;
+    }
+ 
+}
+
+
+@media screen and (min-width: 550px) and (max-width: 709px) {
+    .contact-bis-box::placeholder {
+        font-size: 20px;
+    }
+    .contact-bis-box {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 549px) {
+    .contact-bis-box::placeholder {
+        font-size: 12px;
+    }
+    .contact-bis-box {
+        font-size: 12px;
+    }
+}
+
+/** CONTACT FORM*/
+
+.contact-fond-gris{
+    background-color: var(--main-color-blanc) !important;padding:200px 10px 10px 10px;width:80%;border-radius: 10px;
+}
+
+.contact-informations-obligatoires{
+    text-align:right;width: 83%;
+}
+
+.bouton-contact{
+    font-size: var(--main-button-font-size-XL);
+    color: white;
+    font-family: var(--main-police-title);
+    padding: 5px 20px 5px 20px;
+
+    background-color: var(--main-color-red);
+}
+
+.contact-title1 {
+    padding-top: 40px;
+    margin-bottom: 0px !important;
+    font-family: var(--main-police-title);
+    color: var(--main-color-red);
+    font-size: var(--main-title-font-size-XL);
+}
+.contact-title2 {
+    margin-bottom: 0px !important;
+    font-family: var(--main-police-title);
+    color: var(--main-color-red);
+    font-size: var(--main-title-font-size-M);
+}
+.contact-title3 {
+    margin-bottom: 0px !important;
+    font-family: var(--main-police-title);
+    color: var(--main-color-red);
+    font-size: var(--main-title-font-size-M);
+}
+.contact-title-mail {
+    margin-bottom: 0px !important;
+    font-family: var(--main-police-title);
+    color: var(--main-color-red);
+    font-size: var(--main-title-font-size-M);
+}
+
+
+.contact-box::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-family: var(--main-police-title);
+}
+
+.contact-box:focus {
+    font-family: var(--main-police-text);
+    color: black;
+}
+
+.contact-box {
+    font-family: var(--main-police-text);
+    color: black;
+    border-color: black !important;
+    border-width: 2px;
+}
+
+
+
+.row:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+
+/***erreur***/
+.erreur404-titres{
+    padding-top: 80px;
+    margin-bottom: 0px !important;
+    font-family: var(--main-police-title);
+    color: var(--main-color-red);
+    font-size: 80px;
+}
+
+/***
+    CONNAITRE
+***/
+
+#ethoprotectio{
+    padding-top: 50px;
+    background-color: var(--main-color-blue);
+}
+/***
+    PRESTATIONS
+ ***/
+
+ .accompagnement-scientifique-bloc{
+    width: 100%;padding: 0%;margin:0%;
+ }
+ .accompagnement-scientifique-images{
+    min-height:300px;
+     background-size: cover;
+      background-repeat: no-repeat;
+    background-position: 50% 50%;
+ }
+
+ .prestations-bloc{
+    width: 100%;padding: 0%;margin:0%;
+ }
+
+ .prestations-images{
+    min-height:300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+ }
+ .prestations-bloc-prestation{
+    background:var(--main-color-blue);width: 100%;padding: 0%;margin:0%
+ }
+
+
+/** MAIN DIV */
+
+.app-component-main-div{
+    min-height: 100%;position: relative; padding:0 0 600px;
+}
+
+.footer-div {
+
+    background-color: var(--main-color-blue) !important;
+    width: 100%;margin:0%;position:absolute;bottom: 0;height: 600px;
+}
+
+
+
+@media screen and (min-width: 775px) {
+    #logofb{
+        width: 40px;
+    }
+    #logolk{
+        width:40px;
+    }
+    
+ 
+}
+
+
+@media screen and (min-width: 550px) and (max-width: 774px) {
+    #logofb{
+        width: 30px;
+    }
+    #logolk{
+        width:30px;
+    }
+}
+
+@media screen and (max-width: 549px) {
+    #logofb{
+        width: 40px;
+    }
+    #logolk{
+        width:40px;
+    }
+}
+@media screen and (min-width: 955px) {
+    #footer-logo {
+        height: 200px;
+    }
+}
+
+
+@media screen and (min-width: 550px) and (max-width: 954px) {
+    #footer-logo {
+        height: 130px;
+    }
+}
+
+@media screen and (max-width: 549px) {
+    #footer-logo {
+        height: 100px;
+    }
+}
+
+
+
+
